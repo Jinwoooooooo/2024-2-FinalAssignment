@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Noto Sans KR;
+    src: url(NotoSansKR-Medium.ttf);
+}
+@font-face {
+    font-family: Noto Sans KR2;
+    src: url(NotoSansKR-Regular.ttf);
+}
+
+body {
+    margin: 0 auto;
+}
+
+.header-ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.header-li a {
+    text-decoration: none;
+    color: black;
+}
+.header-li {
+    padding: 0px 20px 0px 20px;
+    border-right: 1px solid #0000001a;
+    font-size: 12px;
+    font-family: Noto Sans KR;
+    cursor: pointer;
+}
+
+.container {
+    font-family: Noto Sans KR2;
+    margin: 200px 30% 250px 30%;
+    line-height: 45px;
+    color: #333333;
+}
+h1 {
+    font-family: Noto Sans KR2;
+    font-size: 35px;
+}
+.content {
+    font-size: 18px;
+}
+.createdAt {
+    font-size: 13px;
+    color: #6e6e73;
+}
+.commentBox {
+    font-family: Noto Sans KR2;
+    margin-top: 100px;
+}
+.commentForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.commentArea {
+	font-family: Noto Sans KR2;
+    resize: none;
+    padding: 20px;
+    border-color: #e5e5e5;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 14px;
+}
+.cmtbtn {
+    font-family: Noto Sans KR2;
+    width: 80px;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: -40px;
+    background-color: #0071e3;
+    color: white;
+    font-size: 14px;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+	align-self: flex-end;
+}
+.cmtbtn:hover {
+	background-color: #0058b1;
+    transition: 0.5s;
+}
+.post-actions {
+	display: flex;
+	margin-right: -37.5px;
+	justify-content: end;
+}
+.post-actions button {
+	font-family: Noto Sans KR2;
+	width: 80px;
+    height: 50px;
+    border-radius: 30px;
+    border-style: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 2.5px;
+}
+.post-actions button:hover {
+    background-color: rgb(100, 100, 100);
+    transition: 0.5s;
+    color: white;
+}
+.comment {
+	line-height: 20px;
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #f2f2f2;
+	margin-right: -37.5px;
+	display: flex;
+	justify-content: space-between;
+}
+.commentbtnbox {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+.commentbtnbox button {
+	font-family: Noto Sans KR2;
+	width: 60px;
+	height: 30px;
+	margin: 5px 0px 5px 5px;
+	border-style: none;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.commentbtnbox button:hover {
+	background-color: rgb(100, 100, 100);
+    transition: 0.5s;
+    color: white;
+}
+footer {
+    background-color: #f5f5f7;
+}
+.copyright {
+    font-family: Noto Sans KR2;
+    margin: 100px 19% 0px 19%;
+    color: #6e6e73;
+    line-height: 13px;
+    font-size: 12px;
+    padding: 40px 0px 40px 0px;
+}

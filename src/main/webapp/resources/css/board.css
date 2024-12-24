@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Noto Sans KR;
+    src: url(NotoSansKR-Medium.ttf);
+}
+@font-face {
+    font-family: Noto Sans KR2;
+    src: url(NotoSansKR-Regular.ttf);
+}
+
+body {
+    margin: 0 auto;
+}
+
+.header-ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.header-li a {
+    text-decoration: none;
+    color: black;
+}
+.header-li {
+    padding: 0px 20px 0px 20px;
+    border-right: 1px solid #0000001a;
+    font-size: 12px;
+    font-family: Noto Sans KR;
+    cursor: pointer;
+}
+h1 {
+	font-family: Noto Sans KR2;
+	text-align: center;
+	margin-top: 150px;
+	margin-bottom: 100px;
+}
+img {
+	width: 175px;
+}
+.imgbox {
+	text-align: center;
+	margin-bottom: 50px;
+}
+table {
+    font-family: Noto Sans KR2;
+    display: flex;
+    justify-content: center; 
+    border-collapse: collapse;
+    padding: 70px 100px 50px 100px;
+}
+td {
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+}
+.firstitem {
+	font-family: Noto Sans KR;
+	color: #4e4e4e;
+	padding: 50px 0px 50px 0px;
+}
+td a {
+    text-decoration: none;
+    color: black;
+}
+td a:hover {
+    border-bottom: 1px solid black;
+}
+tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 750px;
+}
+button {
+    font-family: Noto Sans KR2;
+    width: 90px;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #0071e3;
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0058b1;
+    transition: 0.5s;
+}
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+    font-family: Noto Sans KR2;
+}
+
+.pagination a {
+    margin: 20px;
+    padding: 8px 15px 8px 15px;
+    text-decoration: none;
+	color: #4e4e4e;
+}
+.pagination a.active {
+    background-color: #0071e3;
+    color: white;
+    border-radius: 20px;
+}
+
+.page {
+	border-radius: 20px;
+	background-color: #f5f5f7;;
+}
+.page:hover {
+	border-radius: 20px;
+	background-color: #0058b1;
+    transition: 0.5s;
+    color: white;
+}
+
+footer {
+    background-color: #f5f5f7;
+}
+.copyright {
+    font-family: Noto Sans KR2;
+    margin: 100px 19% 0px 19%;
+    color: #6e6e73;
+    line-height: 13px;
+    font-size: 12px;
+    padding: 40px 0px 40px 0px;
+}

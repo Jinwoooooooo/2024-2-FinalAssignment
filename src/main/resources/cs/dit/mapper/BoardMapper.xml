@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cs.dit.mapper.BoardMapper">
+
+	<select id="getList" resultType="cs.dit.domain.BoardVO">
+		select * from board3 order by bno desc
+	</select>
+	
+	<select id="getListPage" resultType="cs.dit.domain.BoardVO">
+		select * from board3 order by bno desc limit #{pageStart}, #{amount}
+	</select>
+	 
+	<insert id="insert">
+		insert into board3(title, content, writer) 
+				values(#{title}, #{content}, #{writer})
+	</insert>
+
+	<select id="read" resultType="cs.dit.domain.BoardVO">
+		select * from board3 where bno = #{bno}
+	</select>
+	
+	<delete id="delete">
+		delete from board3 where bno = #{bno}
+	</delete>
+	
+	<update id="update">
+		update board3 set 
+				title=#{title}, 
+				content=#{content},
+				writer=#{writer},
+				updateDate=now()
+				where bno = #{bno}
+	</update>
+	
+	<select id="getTotal" resultType="int">
+		select count(bno) from board3
+	</select>
+	
+</mapper>
